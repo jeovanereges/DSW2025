@@ -1,32 +1,68 @@
-# DataCoin
-Conjunto de dados estruturado com informações históricas do par BTC-USD, abrangendo o período de janeiro de 2017 a maio de 2025. O repositório inclui o _dataset_ final em formato `.csv`, bem como o código-fonte em Python responsável pela extração, agregação, enriquecimento e exportação dos dados, utilizando a biblioteca _yfinance_ para acesso à API pública do Yahoo Finance.
+# DataCoin 📊
+
+Conjunto de dados estruturado com informações históricas do par **BTC-USD**, abrangendo o período de **janeiro de 2017 a maio de 2025**.  
+O repositório inclui o _dataset_ final em formato `.csv`, bem como o código-fonte em Python responsável pela extração, agregação, enriquecimento e exportação dos dados, utilizando a biblioteca `yfinance` para acesso à API pública do Yahoo Finance.
 
 ---
+
 ## 📚 Conteúdo
 
-- `DataCoin.csv`: base final com 157 registros mensais consolidados do par BTC-USD, contendo preços agregados (abertura, máxima, mínima e fechamento), variação percentual mensal e colunas temporais derivadas (mês, ano e número do mês).
+- `DataCoin.csv`: base final com **157 registros mensais consolidados** do par BTC-USD, contendo:
+  - Preços agregados (Abertura, Máxima, Mínima e Fechamento)
+  - Variação percentual mensal
+  - Colunas temporais derivadas (Mês, Ano, Número do Mês)
   
-- `DSW2025.ipynb`: _script_ Python modularizado e comentado, responsável pela coleta, processamento e enriquecimento do _dataset_. Utiliza a biblioteca _yfinance_ para acessar a API pública do Yahoo Finance, realizando etapas como extração diária, agregação mensal, cálculo da variação percentual, e geração de marcadores temporais (mês, ano, número do mês), exportando o resultado final em formato `.csv`.
+- `DSW2025.ipynb`: _script_ Python modularizado e comentado, responsável pela coleta, processamento e enriquecimento do _dataset_.  
+Utiliza a biblioteca `yfinance` para acessar a API pública do Yahoo Finance, realizando etapas como:
+  - Extração diária
+  - Agregação mensal
+  - Cálculo da variação percentual
+  - Geração de marcadores temporais
+  - Exportação em formato `.csv`
   
-- `README.md`: instruções de uso.
+- `README.md`: instruções e detalhes sobre o projeto.
+
 ---
-## Como usar 🚀
-### 1. Clonar o repositório
+
+## 🔍 Como Usar
+
+### 1️⃣ Clonar o Repositório 📦
+
 git clone https://github.com/jeovanereges/DSW2025.git
 cd DSW2025
-### 2. Instalar as dependências
-- pip install yfinance --upgrade --no-cache-dir
-- pip install pandas
-- pip install numpy
 
-### 3. Personalização do script ⚙️
-Você pode editar o intervalo de datas e o ativo financeiro diretamente no _script_ **DSW2025.ipynb**, ajustando os parâmetros de `início`, `fim` e `símbolo` (_start, end_ e _ticker_) para personalizar a coleta de dados via _yfinance_.
+### 2️⃣ Instalar as Dependências 🛠️
+pip install yfinance --upgrade --no-cache-dir
+pip install pandas
+pip install numpy
 
-### 4. Formato de saída 📦
-O arquivo final `.csv` contém as seguintes colunas: `Date`, `Open`, `High`, `Low`, `Close`, `Resultado%`, `Mes`, `Ano` e `No.Mes`, representando respectivamente a data de referência, os preços agregados mensais do BTC-USD, a variação percentual do fechamento em relação ao mês anterior e as informações temporais derivadas.
+### 3️⃣ Personalizar o Script ⚙️
+Edite diretamente no **DSW2025.ipynb** os parâmetros de data e ativo financeiro:
+- start, end → intervalo de tempo desejado
+- ticker → código do ativo no Yahoo Finance (ex: "BTC-USD")
 
-### Licença 📄
-Este projeto está licenciado sob a Licença MIT. Você pode utilizá-lo, copiá-lo e modificá-lo livremente, desde que a devida atribuição ao autor original seja mantida.
+### 📤 Formato de Saída
+O arquivo .csv final contém as seguintes colunas:
 
-### Contribuições 🤝
-Sinta-se à vontade para abrir _issues_, enviar _pull requests_ ou sugerir melhorias na estrutura do código e na expansão do _dataset_ para outros ativos financeiros, diferentes intervalos de tempo ou agregações alternativas.
+| Coluna       | Descrição                                                    |
+| ------------ | ------------------------------------------------------------ |
+| `Date`       | Data de referência mensal                                    |
+| `Open`       | Preço de abertura (média mensal)                             |
+| `High`       | Preço mais alto do mês                                       |
+| `Low`        | Preço mais baixo do mês                                      |
+| `Close`      | Preço de fechamento (média mensal)                           |
+| `Resultado%` | Variação percentual do fechamento em relação ao mês anterior |
+| `Mes`        | Nome do mês                                                  |
+| `Ano`        | Ano correspondente                                           |
+| `No.Mes`     | Número do mês (1 a 12)                                       |
+
+### 📄 Licença
+Este projeto está licenciado sob a Licença MIT. Sinta-se livre para usar, copiar e modificar o conteúdo, mantendo a atribuição ao autor original.
+
+### 🤝 Contribuições
+Sugestões, correções e melhorias são bem-vindas!
+Você pode abrir issues, enviar pull requests ou contribuir com:
+
+- Novos ativos financeiros
+- Diferentes intervalos de tempo
+- Estratégias alternativas de agregação de dados
