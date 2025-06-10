@@ -37,8 +37,8 @@ pip install numpy
 
 ### 3️⃣ Personalizar o Script ⚙️
 Edite diretamente no **DSW2025.ipynb** os parâmetros de data e ativo financeiro:
-- start, end → intervalo de tempo desejado
-- ticker → código do ativo no Yahoo Finance (ex: "BTC-USD")
+- start, end → intervalo de tempo desejado.
+- ticker → código do ativo no Yahoo Finance (ex: "BTC-USD").
 
 ### 📤 Formato de Saída
 O arquivo .csv final contém as seguintes colunas:
@@ -62,6 +62,6 @@ Este projeto está licenciado sob a Licença MIT. Sinta-se livre para usar, copi
 Sugestões, correções e melhorias são bem-vindas!
 Você pode abrir issues, enviar pull requests ou contribuir com:
 
-- Novos ativos financeiros
-- Diferentes intervalos de tempo
-- Estratégias alternativas de agregação de dados
+- Novos ativos financeiros.
+- Diferentes intervalos de tempo.
+- Estratégias alternativas de agregação de dados.
