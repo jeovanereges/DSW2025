@@ -11,8 +11,7 @@ Conjunto de dados estruturado com informações históricas do par **BTC-USD**, 
   - Variação percentual mensal
   - Colunas temporais derivadas (Mês, Ano, Número do Mês)
   
-- `DSW2025.ipynb`: _script_ Python modularizado e comentado, responsável pela coleta, processamento e enriquecimento do _dataset_.  
-Utiliza a biblioteca `yfinance` para acessar a API pública do Yahoo Finance, realizando etapas como:
+- `DSW2025.ipynb`: _script_ Python modularizado e comentado, responsável pela coleta, processamento e enriquecimento do _dataset_. Utiliza a biblioteca `yfinance` para acessar a API pública do Yahoo Finance, realizando etapas como:
   - Extração diária
   - Agregação mensal
   - Cálculo da variação percentual
@@ -27,13 +26,13 @@ Utiliza a biblioteca `yfinance` para acessar a API pública do Yahoo Finance, re
 
 ### 1️⃣ Clonar o Repositório 📦
 
-git clone https://github.com/jeovanereges/DSW2025.git
-cd DSW2025
+- git clone https://github.com/jeovanereges/DSW2025.git
+- cd DSW2025
 
 ### 2️⃣ Instalar as Dependências 🛠️
-pip install yfinance --upgrade --no-cache-dir
-pip install pandas
-pip install numpy
+- pip install yfinance --upgrade --no-cache-dir
+- pip install pandas
+- pip install numpy
 
 ### 3️⃣ Personalizar o Script ⚙️
 Edite diretamente no **DSW2025.ipynb** os parâmetros de data e ativo financeiro:
