@@ -1,7 +1,6 @@
 # DataCoin 📊
 
-Conjunto de dados estruturado com informações históricas do par **BTC-USD**, abrangendo o período de **janeiro de 2017 a maio de 2025**.  
-O repositório inclui o _dataset_ final em formato `.csv`, bem como o código-fonte em Python responsável pela extração, agregação, enriquecimento e exportação dos dados, utilizando a biblioteca `yfinance` para acesso à API pública do Yahoo Finance.
+Conjunto de dados estruturado com informações históricas do par **BTC-USD**, abrangendo o período de **janeiro de 2017 a maio de 2025**. O repositório inclui o _dataset_ final em formato `.csv`, bem como o código-fonte em Python responsável pela extração, agregação, enriquecimento e exportação dos dados, utilizando a biblioteca `yfinance` para acesso à API pública do Yahoo Finance.
 
 ---
 
